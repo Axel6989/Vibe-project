@@ -1,44 +1,39 @@
-# [Project name — the folder name if nobody told you]
+# Кофейня в пяти эпохах
 
-One page. What this project is, what has been decided, where things are, how to check it. Replace every bracket. Keep it at one page: if it grows, something under it wants its own folder.
+## Что это
 
-## What this is
+Статическая фотостраница о постоянстве одного места — кофейни — в 1200, 1800, 1980, 2026 и 2100 годах. Она работает, когда на публичном GitHub Pages открывается вертикальная 9:16-сцена, каждые три секунды плавно меняющая пять изображений, и ниже видна галерея всех эпох.
 
-[Two or three sentences: what the project does, for whom, and what "working" means.]
+## Решения
 
-## Decisions
+Решения хранятся в [journal.md](journal.md), новые сверху. Главное:
 
-Decisions live in [journal.md](journal.md), newest first, each with a stable name. The ones that shape everything else:
+- [⚖️ pollinations-image-source — изображения создаёт бесплатный Pollinations AI без ключа]
 
-- [⚖️ name — one line]
+## Где что лежит
 
-## Where things are
+- `index.html` — автономная страница и стили анимации.
+- `images/` — пять JPEG-изображений эпох.
+- `docs/page.md` — спецификация страницы.
+- `docs/` — проектная истина: эта страница и журнал решений.
+- `AGENTS.md` — правила для агентов.
 
-- `docs/` — the truth: this page, the journal, one file per zone.
-- `AGENTS.md` — the rules every agent reads first.
-- [`src/` or wherever the code lives — one line]
-- [the file with the keys — its name and the note that it is never committed]
-
-## How to check
-
-One command that runs the formatter, the linter, the types and the tests. Agents run it before every commit; red means not done. No code yet: write "none yet".
+## Как проверить
 
 ```text
-[your check command, for example: pnpm check, or: none yet]
+Проверьте index.html в браузере: сцена 9:16, пять подписей, смена кадра раз в 3 секунды и все пять JPEG без ошибок загрузки.
 ```
 
-## How to run
+## Как запустить
 
 ```text
-[your run command and the address, for example: pnpm dev → http://localhost:3000]
+Откройте index.html в браузере или перейдите на адрес GitHub Pages после публикации.
 ```
 
-## Zones
+## Зоны
 
-One file per zone of the project, each the canon of how that zone works right now.
+- [page.md](page.md) — канон композиции, изображений и критериев готовности страницы.
 
-- [zone.md — one line; a zone file appears with the zone's first rule, never empty]
+## Статус
 
-## Status
-
-Where the live status is visible: [a page, a dashboard, a command]. Docs describe how things work; they never hold the current numbers.
+Публичный адрес GitHub Pages после публикации — живая проверка доступности страницы.
